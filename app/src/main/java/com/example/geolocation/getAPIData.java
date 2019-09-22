@@ -42,7 +42,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
             URL url = new URL(addr);
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
             http.setConnectTimeout(10000);
-            http.setUseCaches(true);
+            http.setUseCaches(false);
             StringBuilder sb = new StringBuilder();
             BufferedReader br = new BufferedReader(new InputStreamReader(http.getInputStream()));
             while (true) {
